@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<title> Login Page </title>
+			<!External link to css>
+			<link rel="stylesheet" href="style.css"> 
+	</head>
+	<body>
+        <form method="POST" action="login-Valid.php" >
+			<!--Login Page-->
+			<div class="logo-container">
+					<img src="TunePlay (2).png" alt="TunePlay Logo" class="logo">
+					<h2 class="brand-title">TunePlay</h2>
+			</div>
+			<div class= "container" id="login">
+				<h1 class= "title">Login</h1>
+				<!-- Username Form-->
+				<div class="forminput">
+					<div id = "usernameinput">
+						<label for="Username"> Username</label>
+						<input type="text" name="username" id= "Username" placeholder="Username" required>
+					</div>
+					<!-- Password Form-->
+					<div id= "passwordinput">					
+						<label for="Password"> Password</label>
+						<input type="password" name="password" id= "Password" placeholder="Password" required>
+					</div>
+				</div>
+				<!-- Login Button-->
+				<div class= "submitbutton">
+					<button type= "Submit"> Login </button>
+					<div class="links">
+						<p> Don't Have An Account?</p>
+						<a href="signup.html">Sign Up</a>
+					</div>
+				</div>
+			</div>
+		</form>
+		<script src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,439 @@
+	/* CSS rule for every page */
+		*{
+			margin: 0;
+			padding:0;
+			box-sizing:border-box;
+			font-family: Arial, sans-serif;;
+			 
+			  justify-content: center;
+		    align-items: center;
+
+		}
+
+		body{	
+	    height: 1000px;
+	    background: linear-gradient(to right,mediumpurple, hotpink,blueviolet);
+
+	    
+		}
+
+	/*Logo Image Style For All Pages*/
+
+	    .logo-container {
+	        display: flex;
+	        align-items: center;
+	        justify-content: center;
+	        gap: 1px;
+	        margin-bottom: 1px;
+	        margin-top: 10px;
+	    }
+
+	    .logo {
+	        width: 70px;
+	        height: 70px;
+	        object-fit: contain;
+	    }
+
+	    .brand-title {
+	        font-size: 30px;
+	        margin: 0;
+	        color: white;
+	        font-family: Arial, sans-serif;
+	    }
+
+
+	/*Login & Sign up Page */
+	
+		.container{	
+
+					width: 570px;
+					height: 500px;
+					padding: 20px;
+					margin: 70px auto;
+					border-radius:10px;
+					text-align: center;
+					box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);	
+					align-content: center;
+					font-family: Arial,sans-serif;
+
+				}	
+
+		form{
+				margin: 0 9px;
+			}
+
+		.title{
+			color: purple;
+			font-size: 30px;
+			text-align:center;
+			padding:20px ;
+			margin-bottom: 20px;
+
+		}
+
+		input{
+				color:inherit;
+				width: 350px;
+				height: 35Px;
+				background-color: white;
+				border:none;
+				border-top: 1px solid dimgrey;
+				margin-left: 5px;
+				padding-left: 10px;
+				border-radius: 6px;
+
+				
+		}
+
+	
+	/*Signup Only*/
+		#passwordinput{
+			margin-top: 20px;
+
+		}
+
+		#passwordVerifyinput{
+			margin-top: 20px;
+
+		}
+		/*For All Buttons Except Survey Buttons*/
+		button{
+				margin-top:20px;
+				margin-bottom: 5px;
+	    		padding: 12px 24px;
+	    		background-color: indianred;
+	    		color: white;
+	    		border: none;
+	    		border-radius: 6px;
+	    		cursor: pointer;
+	    		font-size: 14px;
+
+		}
+
+		button:hover{ 
+				background-color: darkred;
+		 }
+
+		.links{
+			margin-top: 18px;
+			font-weight: bold;
+
+		}
+
+		a {
+		            color:darkblue;
+		            text-decoration: none;
+		            font-size: 15px;
+		            margin:10px;
+
+		        }
+
+		 a:hover {
+		            text-decoration: underline;
+		        }
+
+
+		label{
+
+		}
+
+	
+
+	/*Home Page Styles*/
+		
+		/*Header*/
+		 	header ul{ 
+		 		list-style-type: none;
+		 		font-size: 30px;
+		 		overflow:hidden;
+		 		background-color: mediumpurple;
+		 		margin-top: 50px;
+		 		
+
+		 	}
+		 	header ul li{	
+		 		float:right;
+
+		 	}
+		 	header ul li a { 
+		 		display:block;
+		 		padding: 10px;
+
+
+		 	}
+		 	header li a {
+		  		display: block;
+		  		font-weight: bold;
+		  		color: white;
+		  		text-align: center;
+		  		padding: 14px 16px;
+		  		font-size:20px;
+		  		text-decoration: none;
+
+			}
+			header li a:hover {
+		  	background-color: blueviolet;
+			}
+			header h1{
+				color: white;
+				text-align: center;
+
+
+			}
+
+	/*Body*/
+			.mainText{
+				color:white;
+				text-align: center;
+				margin-top: 300px;
+				font-size: 20px;
+				font-family: Arial, sans-serif;
+			}
+		
+
+
+
+
+	/* Survey Styles */
+
+	    .survey-container {
+
+	        margin-top: 50px;
+	        max-width: 800px;
+	        margin: 40px auto;
+	        padding: 20px;
+	        font-family: Arial, sans-serif;
+	        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  
+	        align-content: center;
+	    }
+
+	    .question {
+	        margin: 20px 0;
+	        padding: 20px;
+	        border: 1px solid #ddd;
+	        border-radius: 8px;
+	        background-color: #fff;
+	        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	    }
+
+	    .question label {
+	        display: block;
+	        font-size: 19px;
+	        margin-bottom: 20px;
+	        color: #333;
+	    }
+
+	    .options1, .optionButton2 {
+	    		
+	        display: grid;
+	        grid-template-columns: repeat(2, 1fr);
+	        gap: 10px;
+	    }
+
+	    .optionButton1, .optionButton2 {
+	    	  color: black;
+	        padding: 12px 20px;
+	        border: 2px solid #e0e0e0;
+	        border-radius: 6px;
+	        background-color: white;
+	        cursor: pointer;
+	        font-size: 16px;
+	        transition: all 0.3s ease;
+	        text-align: left;
+	    }
+
+	    .optionButton1:hover, .optionButton2:hover {
+	        background-color: lightgrey;
+	        transform: translateY(-2px);
+	    }
+
+	     .optionButton1.selected, .optionButton2.selected {
+	        background-color: blueviolet;
+	        color: white;
+	        border-color: hotpink;
+	    }
+
+	    .next-button, .back-button, .home-button, .submit-button{
+	        margin-top: 20px;
+	        padding: 12px 24px;
+	        color: white;
+	        display: none;
+	        border: none;
+	        border-radius: 6px;
+	        cursor: pointer;
+	        font-size: 14px;
+	        background-color: dodgerblue;
+	    }
+	    
+		
+	    .next-button:hover, .back-button:hover, .home-button:hover {
+	        background-color: royalblue; !important;
+	    }
+
+	     .survey-navigation {
+	            margin-top: 20px;
+	            display: flex;
+	            justify-content: space-between;
+	        }
+
+	     .submit-button {
+	        background-color: limegreen;
+	    }
+	    .submit-button:hover {
+	        background-color: lightgreen;
+	    }
+	    .modal {
+	        display: none;
+	        position: fixed;
+	        top: 0;
+	        left: 0;
+	        width: 100%;
+	        height: 100%;
+	        background-color: rgba(0,0,0,0.5);
+	    }
+	    .content {
+	        background-color: white;
+	        margin: 15% auto;
+	        padding: 20px;
+	        border-radius: 8px;
+	        width: 80%;
+	        max-width: 400px;
+	        text-align: center;
+	    }
+	    .popUp-buttons {
+	        margin-top: 20px;
+	    }
+	    .popUpbutton {
+	        padding: 8px 16px;
+	        margin: 0 10px;
+	        border: none;
+	        border-radius: 4px;
+	        cursor: pointer;
+	    }
+	    .confirm {
+	        background-color: #dc3545;
+	        color: white;
+	    }
+	    .cancel {
+	        background-color: #6c757d;
+	        color: white;
+	    }
+
+	       
+    /*Profile Styles*/
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 24px;
+            display: block;
+            object-fit: cover;
+            border: 3px solid #3498db;
+        }
+
+        .username {
+            font-size: 29px;
+            color: white;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .favorites-section {
+            margin-top: 32px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            
+        }
+
+        .favorites-title {
+            font-size: 25px;
+            color: #2c3e50 ;
+            margin-bottom: 8px;
+        }
+
+        .no-favorites {
+            color: black;
+            font-style: italic;
+        }
+        .home{
+        	text-align: center;
+        }
+        #update{
+        	display: block;
+        	width: 200px;
+        	background:indianred;
+        	color: whitesmoke;
+        	padding:12px;
+        	margin:10px auto;
+        	border-radius: 6px;
+        	cursor:pointer;
+
+        }
+
+        #update:hover{
+        	background-color: darkred;
+        }
+
+        .hiddenfile{
+        	display: none;
+        }
+
+    /*Recommendations Style*/
+		#title {
+		    color: white; 
+		    text-align: center;
+		    margin-top: 10px;
+		    margin-bottom: 30px;
+		    letter-spacing: 1px;
+		}
+
+	/* I Got this design from w3school but added my own features*/
+	/*This is used to style the tables on the recommendations and profile Page */
+		#recTable { 
+		    font-family: Arial, Helvetica, sans-serif; 
+		    border-collapse: collapse; 
+		    width: 90%; 
+		    border-radius: 10px; 
+		    background-color: white; 
+		    border-spacing: 0; 
+		    overflow: hidden; 
+		    padding: 20px; 
+		    max-width: 1000px; 
+		    margin: 0 auto; 
+		} 
+
+		#recTable td, #recTable th { 
+		    padding: 8px; 
+		} 
+
+		#recTable tr {
+		    height: 50px;
+		} 
+
+		#recTable tr:nth-child(even) {
+		    background-color: lightgrey;
+		} 
+
+		#recTable tr:nth-child(odd) {
+		    background-color: whitesmoke;
+		} 
+
+		#recTable tr:hover {
+		    background-color: #ddd;
+		} 
+
+		#recTable th { 
+		    padding-top: 12px; 
+		    padding-bottom: 12px; 
+		    text-align: left; 
+		    background-color: blueviolet; 
+		    color: white; 
+		}
+
+		#retake{
+			margin-top: 20px;
+		}
+
+		
+
+							
